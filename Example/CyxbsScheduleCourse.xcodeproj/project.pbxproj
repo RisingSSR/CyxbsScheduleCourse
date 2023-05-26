@@ -37,10 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		007BAB4134CEFD7FCAD4E6F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		007BAB4134CEFD7FCAD4E6F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		02DD68F999B319607938689D /* Pods-CyxbsScheduleCourse_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyxbsScheduleCourse_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CyxbsScheduleCourse_Tests/Pods-CyxbsScheduleCourse_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1187B5E080CD54EF0033717E /* Pods-CyxbsScheduleCourse_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyxbsScheduleCourse_Tests.release.xcconfig"; path = "Target Support Files/Pods-CyxbsScheduleCourse_Tests/Pods-CyxbsScheduleCourse_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		11B1CCF97F78EE2A925F4D63 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		11B1CCF97F78EE2A925F4D63 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		41B3DBF2196CC8F79F074C51 /* Pods-CyxbsScheduleCourse_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyxbsScheduleCourse_Example.release.xcconfig"; path = "Target Support Files/Pods-CyxbsScheduleCourse_Example/Pods-CyxbsScheduleCourse_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CyxbsScheduleCourse_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CyxbsScheduleCourse_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,7 +64,7 @@
 		6E10FFC3DC9BD6CD50544CA9 /* Pods_CyxbsScheduleCourse_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CyxbsScheduleCourse_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BAF5AF72A4CBEA43D43D030B /* CyxbsScheduleCourse.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CyxbsScheduleCourse.podspec; path = ../CyxbsScheduleCourse.podspec; sourceTree = "<group>"; };
+		BAF5AF72A4CBEA43D43D030B /* CyxbsScheduleCourse.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CyxbsScheduleCourse.podspec; path = ../CyxbsScheduleCourse.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C60840E52B5954A86C2F0F8C /* Pods_CyxbsScheduleCourse_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CyxbsScheduleCourse_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A66787F3101D0DB4C5D4DA /* Pods-CyxbsScheduleCourse_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyxbsScheduleCourse_Example.debug.xcconfig"; path = "Target Support Files/Pods-CyxbsScheduleCourse_Example/Pods-CyxbsScheduleCourse_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				02DD68F999B319607938689D /* Pods-CyxbsScheduleCourse_Tests.debug.xcconfig */,
 				1187B5E080CD54EF0033717E /* Pods-CyxbsScheduleCourse_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,11 +302,25 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CyxbsScheduleCourse_Example/Pods-CyxbsScheduleCourse_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/CyxbsScheduleCourse/CyxbsScheduleCourse.framework",
+				"${BUILT_PRODUCTS_DIR}/FluentDarkModeKit/FluentDarkModeKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RyKit/RyKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLiteRepairKit/sqliterk.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDB/WCDB.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher/sqlcipher.framework",
+				"${BUILT_PRODUCTS_DIR}/hpple/hpple.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CyxbsScheduleCourse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FluentDarkModeKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RyKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqliterk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqlcipher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hpple.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -497,6 +511,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CyxbsScheduleCourse/CyxbsScheduleCourse-Prefix.pch";
 				INFOPLIST_FILE = "CyxbsScheduleCourse/CyxbsScheduleCourse-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +528,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CyxbsScheduleCourse/CyxbsScheduleCourse-Prefix.pch";
 				INFOPLIST_FILE = "CyxbsScheduleCourse/CyxbsScheduleCourse-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

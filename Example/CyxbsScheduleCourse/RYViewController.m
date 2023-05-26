@@ -7,6 +7,9 @@
 //
 
 #import "RYViewController.h"
+#import "ScheduleController.h"
+#import "SchedulePresenter.h"
+#import "ScheduleCollectionViewLayout.h"
 
 @interface RYViewController ()
 
@@ -18,6 +21,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    SchedulePresenter *pr = [[SchedulePresenter alloc] initWithDouble];
+    ScheduleController *vc = [[ScheduleController alloc] initWithPresenter:pr];
 }
 
 - (void)didReceiveMemoryWarning

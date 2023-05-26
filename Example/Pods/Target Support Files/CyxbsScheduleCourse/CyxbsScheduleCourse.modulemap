@@ -1,0 +1,6 @@
+framework module CyxbsScheduleCourse {
+  umbrella header "CyxbsScheduleCourse-umbrella.h"
+
+  export *
+  module * { export * }
+}

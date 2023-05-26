@@ -1,0 +1,243 @@
+{
+  "name": "CyxbsScheduleCourse",
+  "version": "0.1.0",
+  "summary": "掌邮课表",
+  "description": "- Rising Schedule\n    - Builder Support\n    - External Transaction\n    - Layout Support\n    - Model Support\n    - Network Support\n    - Service Support\n    - Tools Support\n    - View Support\n- Rising Schedule Custom\n- Rising Schedule Detail\n- Rising Schedule Event\n- Rising TabBar Support\n- Rising Transition",
+  "homepage": "https://github.com/RisingSSR/CyxbsScheduleCourse",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "RisingSSR": "2769119954@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/RisingSSR/CyxbsScheduleCourse.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "subspecs": [
+    {
+      "name": "HttpTool",
+      "source_files": "CyxbsScheduleCourse/Classes/HttpTool/**/*",
+      "public_header_files": "CyxbsScheduleCourse/Classes/HttpTool/**/*.h",
+      "dependencies": {
+        "RyKit/Macro/RisingSingleClass": [
+
+        ],
+        "AFNetworking": [
+          "4.0.1"
+        ]
+      }
+    },
+    {
+      "name": "Transition",
+      "source_files": "CyxbsScheduleCourse/Classes/Rising Transition/**/*",
+      "public_header_files": "CyxbsScheduleCourse/Classes/Rising Transition/**/*.h"
+    },
+    {
+      "name": "ShareDataSource",
+      "subspecs": [
+        {
+          "name": "IndexPathEX",
+          "source_files": "CyxbsScheduleCourse/Classes/Rising Schedule/Model Support/NSIndexPath+Schedule/**/*",
+          "public_header_files": "CyxbsScheduleCourse/Classes/Rising Schedule/Model Support/NSIndexPath+Schedule/**/*.h"
+        },
+        {
+          "name": "ScheduleCourse",
+          "source_files": [
+            "CyxbsScheduleCourse/Classes/Rising Schedule/Model Support/**/*",
+            "CyxbsScheduleCourse/Classes/Rising Schedule/Model Support/Service/**/*"
+          ],
+          "public_header_files": [
+            "CyxbsScheduleCourse/Classes/Rising Schedule/Model Support/Public/**/*.h",
+            "CyxbsScheduleCourse/Classes/Rising Schedule/Model Support/Service/**/*.h"
+          ],
+          "private_header_files": "CyxbsScheduleCourse/Classes/Rising Schedule/Model Support/Private/**/*.h",
+          "dependencies": {
+            "RyKit/Macro/RisingSingleClass": [
+
+            ],
+            "CyxbsScheduleCourse/ShareDataSource/IndexPathEX": [
+
+            ],
+            "WCDB": [
+              "1.1.0"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "ScheduleMainable",
+      "subspecs": [
+        {
+          "name": "Schedule",
+          "source_files": [
+            "CyxbsScheduleCourse/Classes/Rising Schedule/Builder Support/**/*",
+            "CyxbsScheduleCourse/Classes/Rising Schedule/External Transaction/**/*",
+            "CyxbsScheduleCourse/Classes/Rising Schedule/Service Support/**/*",
+            "CyxbsScheduleCourse/Classes/Rising Schedule/View Support/**/*"
+          ],
+          "public_header_files": [
+            "CyxbsScheduleCourse/Classes/Rising Schedule/Builder Support/**/*.h",
+            "CyxbsScheduleCourse/Classes/Rising Schedule/External Transaction/**/*.h",
+            "CyxbsScheduleCourse/Classes/Rising Schedule/Service Support/**/*.h",
+            "CyxbsScheduleCourse/Classes/Rising Schedule/View Support/**/*.h"
+          ],
+          "dependencies": {
+            "CyxbsScheduleCourse/ScheduleMainable/Detail/Builder": [
+
+            ],
+            "CyxbsScheduleCourse/Transition": [
+
+            ],
+            "CyxbsScheduleCourse/ShareUI": [
+
+            ],
+            "CyxbsScheduleCourse/ShareDataSource/ScheduleCourse": [
+
+            ],
+            "CyxbsScheduleCourse/ShareDataSource/IndexPathEX": [
+
+            ],
+            "RyKit/Macro/RisingSingleClass": [
+
+            ],
+            "CyxbsScheduleCourse/ScheduleMainable/Custom": [
+
+            ],
+            "CyxbsScheduleCourse/ScheduleMainable/Detail": [
+
+            ],
+            "CyxbsScheduleCourse/Event": [
+
+            ]
+          },
+          "subspecs": [
+            {
+              "name": "CollectionViewLayout",
+              "source_files": "CyxbsScheduleCourse/Classes/Rising Schedule/Layout Support/**/*",
+              "public_header_files": "CyxbsScheduleCourse/Classes/Rising Schedule/Layout Support/**/*.h",
+              "dependencies": {
+                "CyxbsScheduleCourse/ShareDataSource/IndexPathEX": [
+
+                ]
+              }
+            },
+            {
+              "name": "NetworkSupport",
+              "source_files": "CyxbsScheduleCourse/Classes/Rising Schedule/Network Support/**/*",
+              "public_header_files": "CyxbsScheduleCourse/Classes/Rising Schedule/Network Support/**/*.h",
+              "dependencies": {
+                "CyxbsScheduleCourse/HttpTool": [
+
+                ],
+                "CyxbsScheduleCourse/ShareDataSource": [
+
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Custom",
+          "source_files": "CyxbsScheduleCourse/Classes/Rising Schedule Custom/**/*",
+          "public_header_files": "CyxbsScheduleCourse/Classes/Rising Schedule Custom/**/*.h",
+          "dependencies": {
+            "CyxbsScheduleCourse/ShareDataSource/ScheduleCourse": [
+
+            ],
+            "CyxbsScheduleCourse/Transition": [
+
+            ],
+            "CyxbsScheduleCourse/ShareUI": [
+
+            ]
+          }
+        },
+        {
+          "name": "Detail",
+          "source_files": [
+            "CyxbsScheduleCourse/Classes/Rising Schedule Detail/External Transaction/**/*",
+            "CyxbsScheduleCourse/Classes/Rising Schedule Detail/View Support/**/*"
+          ],
+          "public_header_files": [
+            "CyxbsScheduleCourse/Classes/Rising Schedule Detail/External Transaction/**/*.h",
+            "CyxbsScheduleCourse/Classes/Rising Schedule Detail/View Support/**/*.h"
+          ],
+          "dependencies": {
+            "CyxbsScheduleCourse/Transition": [
+
+            ]
+          },
+          "subspecs": [
+            {
+              "name": "Builder",
+              "source_files": "CyxbsScheduleCourse/Classes/Rising Schedule Detail/Builder Support/**/*",
+              "public_header_files": "CyxbsScheduleCourse/Classes/Rising Schedule Detail/Builder Support/**/*.h",
+              "dependencies": {
+                "CyxbsScheduleCourse/ShareUI": [
+
+                ],
+                "CyxbsScheduleCourse/ShareDataSource": [
+
+                ],
+                "CyxbsScheduleCourse/ScheduleMainable/Custom": [
+
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TabBar",
+      "source_files": "CyxbsScheduleCourse/Classes/Rising TabBar Support/**/*",
+      "public_header_files": "CyxbsScheduleCourse/Classes/Rising TabBar Support/**/*.h",
+      "dependencies": {
+        "CyxbsScheduleCourse/ScheduleMainable": [
+
+        ],
+        "CyxbsScheduleCourse/Transition": [
+
+        ],
+        "CyxbsScheduleCourse/ShareUI": [
+
+        ]
+      }
+    },
+    {
+      "name": "Event",
+      "source_files": "CyxbsScheduleCourse/Classes/Rising Schedule Event/**/*",
+      "public_header_files": "CyxbsScheduleCourse/Classes/Rising Schedule Event/**/*.h",
+      "dependencies": {
+        "CyxbsScheduleCourse/ShareDataSource": [
+
+        ],
+        "CyxbsScheduleCourse/ShareUI": [
+
+        ],
+        "hpple": [
+          "0.2.0"
+        ]
+      }
+    },
+    {
+      "name": "ShareUI",
+      "source_files": "CyxbsScheduleCourse/Classes/ShareUI/**/*",
+      "public_header_files": "CyxbsScheduleCourse/Classes/ShareUI/**/*.h",
+      "dependencies": {
+        "RyKit": [
+
+        ],
+        "FluentDarkModeKit": [
+          "1.0.4"
+        ]
+      }
+    }
+  ]
+}
