@@ -9,6 +9,7 @@
 #import "ScheduleServiceDataSource.h"
 
 #import "ScheduleNeedsSupport.h"
+#import "NSIndexPath+Schedule.h"
 
 #import "ScheduleCollectionViewCell.h"
 #import "ScheduleSupplementaryCollectionViewCell.h"

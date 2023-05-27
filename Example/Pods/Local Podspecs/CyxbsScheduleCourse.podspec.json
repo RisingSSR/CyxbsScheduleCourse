@@ -1,6 +1,6 @@
 {
   "name": "CyxbsScheduleCourse",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "掌邮课表",
   "description": "- Rising Schedule\n    - Builder Support\n    - External Transaction\n    - Layout Support\n    - Model Support\n    - Network Support\n    - Service Support\n    - Tools Support\n    - View Support\n- Rising Schedule Custom\n- Rising Schedule Detail\n- Rising Schedule Event\n- Rising TabBar Support\n- Rising Transition",
   "homepage": "https://github.com/RisingSSR/CyxbsScheduleCourse",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/RisingSSR/CyxbsScheduleCourse.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "11.0"

@@ -10,6 +10,7 @@
 #import "ScheduleController.h"
 #import "SchedulePresenter.h"
 #import "ScheduleCollectionViewLayout.h"
+#import "ScheduleMapModel.h"
 
 @interface RYViewController ()
 

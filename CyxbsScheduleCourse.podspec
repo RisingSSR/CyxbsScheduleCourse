@@ -7,10 +7,17 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'CyxbsScheduleCourse'
-  s.version          = '0.1.1'
-  s.summary          = '掌邮课表'
-
+  s.name = 'CyxbsScheduleCourse'
+  s.version = '0.1.2'
+  
+  s.ios.deployment_target = '11.0'
+  
+  s.license = 'MIT'
+  s.summary = '掌邮课表'
+  s.homepage = 'https://github.com/RisingSSR/CyxbsScheduleCourse'
+  s.author = { 'RisingSSR' => '2769119954@qq.com' }
+  s.source = { :git => 'https://github.com/RisingSSR/CyxbsScheduleCourse.git', :tag => s.version.to_s }
+  
   s.description      = <<-DESC
 - Rising Schedule
     - Builder Support
@@ -27,14 +34,6 @@ Pod::Spec.new do |s|
 - Rising TabBar Support
 - Rising Transition
                        DESC
-
-  s.homepage         = 'https://github.com/RisingSSR/CyxbsScheduleCourse'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'RisingSSR' => '2769119954@qq.com' }
-  s.source           = { :git => 'https://github.com/RisingSSR/CyxbsScheduleCourse.git', :tag => s.version.to_s }
-
-  s.ios.deployment_target = '11.0'
   
   # ---------- subspec ----------
   

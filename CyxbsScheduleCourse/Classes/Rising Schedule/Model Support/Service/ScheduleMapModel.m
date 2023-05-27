@@ -7,6 +7,7 @@
 //
 
 #import "ScheduleMapModel.h"
+#import "NSIndexPath+Schedule.h"
 
 @implementation ScheduleMapModel {
     NSMapTable <NSIndexPath *, ScheduleCollectionViewModel *> *_mapTable;

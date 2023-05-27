@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-NS_HEADER_AUDIT_BEGIN(nullability, sendability)
+NS_ASSUME_NONNULL_BEGIN
 
 #define ScheduleIndexPathNew(s, w, l) [NSIndexPath indexPathForLocation:l inWeek:w inSection:s]
 
@@ -46,4 +46,4 @@ FOUNDATION_EXPORT NSString *const UICollectionElementKindSectionTrailing API_AVA
 FOUNDATION_EXPORT NSString *const UICollectionElementKindSectionPlaceholder API_AVAILABLE(ios(6.0));
 FOUNDATION_EXPORT NSString *const UICollectionElementKindSectionHolder API_AVAILABLE(ios(6.0));
 
-NS_HEADER_AUDIT_END(nullability, sendability)
+NS_ASSUME_NONNULL_END

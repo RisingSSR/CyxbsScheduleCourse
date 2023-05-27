@@ -7,9 +7,8 @@
 //
 
 #import "ScheduleModel.h"
-
 #import "ScheduleTimelineSupport.h"
-
+#import "NSIndexPath+Schedule.h"
 #import "ScheduleNeedsSupport.h"
 
 #pragma mark - ScheduleModel

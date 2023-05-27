@@ -16,6 +16,7 @@
 #import "ScheduleDetailController.h"
 #import "ScheduleCustomViewController.h"
 #import "ScheduleEventViewController.h"
+#import "NSIndexPath+Schedule.h"
 
 #import <RyKit/UIView+YYAdd.h>
 #import <RyKit/UIColor+YYAdd.h>

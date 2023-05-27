@@ -14,50 +14,50 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - CyxbsScheduleCourse (0.1.0):
-    - CyxbsScheduleCourse/Event (= 0.1.0)
-    - CyxbsScheduleCourse/HttpTool (= 0.1.0)
-    - CyxbsScheduleCourse/ScheduleMainable (= 0.1.0)
-    - CyxbsScheduleCourse/ShareDataSource (= 0.1.0)
-    - CyxbsScheduleCourse/ShareUI (= 0.1.0)
-    - CyxbsScheduleCourse/TabBar (= 0.1.0)
-    - CyxbsScheduleCourse/Transition (= 0.1.0)
-  - CyxbsScheduleCourse/Event (0.1.0):
+  - CyxbsScheduleCourse (0.1.1):
+    - CyxbsScheduleCourse/Event (= 0.1.1)
+    - CyxbsScheduleCourse/HttpTool (= 0.1.1)
+    - CyxbsScheduleCourse/ScheduleMainable (= 0.1.1)
+    - CyxbsScheduleCourse/ShareDataSource (= 0.1.1)
+    - CyxbsScheduleCourse/ShareUI (= 0.1.1)
+    - CyxbsScheduleCourse/TabBar (= 0.1.1)
+    - CyxbsScheduleCourse/Transition (= 0.1.1)
+  - CyxbsScheduleCourse/Event (0.1.1):
     - CyxbsScheduleCourse/ShareDataSource
     - CyxbsScheduleCourse/ShareUI
     - hpple (= 0.2.0)
-  - CyxbsScheduleCourse/HttpTool (0.1.0):
+  - CyxbsScheduleCourse/HttpTool (0.1.1):
     - AFNetworking (= 4.0.1)
     - RyKit/Macro/RisingSingleClass
-  - CyxbsScheduleCourse/ScheduleMainable (0.1.0):
-    - CyxbsScheduleCourse/ScheduleMainable/Custom (= 0.1.0)
-    - CyxbsScheduleCourse/ScheduleMainable/Detail (= 0.1.0)
-    - CyxbsScheduleCourse/ScheduleMainable/Schedule (= 0.1.0)
-  - CyxbsScheduleCourse/ScheduleMainable/Custom (0.1.0):
+  - CyxbsScheduleCourse/ScheduleMainable (0.1.1):
+    - CyxbsScheduleCourse/ScheduleMainable/Custom (= 0.1.1)
+    - CyxbsScheduleCourse/ScheduleMainable/Detail (= 0.1.1)
+    - CyxbsScheduleCourse/ScheduleMainable/Schedule (= 0.1.1)
+  - CyxbsScheduleCourse/ScheduleMainable/Custom (0.1.1):
     - CyxbsScheduleCourse/ShareDataSource/ScheduleCourse
     - CyxbsScheduleCourse/ShareUI
     - CyxbsScheduleCourse/Transition
-  - CyxbsScheduleCourse/ScheduleMainable/Detail (0.1.0):
-    - CyxbsScheduleCourse/ScheduleMainable/Detail/Builder (= 0.1.0)
+  - CyxbsScheduleCourse/ScheduleMainable/Detail (0.1.1):
+    - CyxbsScheduleCourse/ScheduleMainable/Detail/Builder (= 0.1.1)
     - CyxbsScheduleCourse/Transition
-  - CyxbsScheduleCourse/ScheduleMainable/Detail/Builder (0.1.0):
+  - CyxbsScheduleCourse/ScheduleMainable/Detail/Builder (0.1.1):
     - CyxbsScheduleCourse/ScheduleMainable/Custom
     - CyxbsScheduleCourse/ShareDataSource
     - CyxbsScheduleCourse/ShareUI
     - CyxbsScheduleCourse/Transition
-  - CyxbsScheduleCourse/ScheduleMainable/Schedule (0.1.0):
+  - CyxbsScheduleCourse/ScheduleMainable/Schedule (0.1.1):
     - CyxbsScheduleCourse/Event
     - CyxbsScheduleCourse/ScheduleMainable/Custom
     - CyxbsScheduleCourse/ScheduleMainable/Detail
     - CyxbsScheduleCourse/ScheduleMainable/Detail/Builder
-    - CyxbsScheduleCourse/ScheduleMainable/Schedule/CollectionViewLayout (= 0.1.0)
-    - CyxbsScheduleCourse/ScheduleMainable/Schedule/NetworkSupport (= 0.1.0)
+    - CyxbsScheduleCourse/ScheduleMainable/Schedule/CollectionViewLayout (= 0.1.1)
+    - CyxbsScheduleCourse/ScheduleMainable/Schedule/NetworkSupport (= 0.1.1)
     - CyxbsScheduleCourse/ShareDataSource/IndexPathEX
     - CyxbsScheduleCourse/ShareDataSource/ScheduleCourse
     - CyxbsScheduleCourse/ShareUI
     - CyxbsScheduleCourse/Transition
     - RyKit/Macro/RisingSingleClass
-  - CyxbsScheduleCourse/ScheduleMainable/Schedule/CollectionViewLayout (0.1.0):
+  - CyxbsScheduleCourse/ScheduleMainable/Schedule/CollectionViewLayout (0.1.1):
     - CyxbsScheduleCourse/Event
     - CyxbsScheduleCourse/ScheduleMainable/Custom
     - CyxbsScheduleCourse/ScheduleMainable/Detail
@@ -67,7 +67,7 @@ PODS:
     - CyxbsScheduleCourse/ShareUI
     - CyxbsScheduleCourse/Transition
     - RyKit/Macro/RisingSingleClass
-  - CyxbsScheduleCourse/ScheduleMainable/Schedule/NetworkSupport (0.1.0):
+  - CyxbsScheduleCourse/ScheduleMainable/Schedule/NetworkSupport (0.1.1):
     - CyxbsScheduleCourse/Event
     - CyxbsScheduleCourse/HttpTool
     - CyxbsScheduleCourse/ScheduleMainable/Custom
@@ -79,22 +79,22 @@ PODS:
     - CyxbsScheduleCourse/ShareUI
     - CyxbsScheduleCourse/Transition
     - RyKit/Macro/RisingSingleClass
-  - CyxbsScheduleCourse/ShareDataSource (0.1.0):
-    - CyxbsScheduleCourse/ShareDataSource/IndexPathEX (= 0.1.0)
-    - CyxbsScheduleCourse/ShareDataSource/ScheduleCourse (= 0.1.0)
-  - CyxbsScheduleCourse/ShareDataSource/IndexPathEX (0.1.0)
-  - CyxbsScheduleCourse/ShareDataSource/ScheduleCourse (0.1.0):
+  - CyxbsScheduleCourse/ShareDataSource (0.1.1):
+    - CyxbsScheduleCourse/ShareDataSource/IndexPathEX (= 0.1.1)
+    - CyxbsScheduleCourse/ShareDataSource/ScheduleCourse (= 0.1.1)
+  - CyxbsScheduleCourse/ShareDataSource/IndexPathEX (0.1.1)
+  - CyxbsScheduleCourse/ShareDataSource/ScheduleCourse (0.1.1):
     - CyxbsScheduleCourse/ShareDataSource/IndexPathEX
     - RyKit/Macro/RisingSingleClass
     - WCDB (= 1.1.0)
-  - CyxbsScheduleCourse/ShareUI (0.1.0):
+  - CyxbsScheduleCourse/ShareUI (0.1.1):
     - FluentDarkModeKit (= 1.0.4)
     - RyKit
-  - CyxbsScheduleCourse/TabBar (0.1.0):
+  - CyxbsScheduleCourse/TabBar (0.1.1):
     - CyxbsScheduleCourse/ScheduleMainable
     - CyxbsScheduleCourse/ShareUI
     - CyxbsScheduleCourse/Transition
-  - CyxbsScheduleCourse/Transition (0.1.0)
+  - CyxbsScheduleCourse/Transition (0.1.1)
   - FluentDarkModeKit (1.0.4)
   - hpple (0.2.0)
   - RyKit (0.1.3):
@@ -258,7 +258,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
-  CyxbsScheduleCourse: dcedf840a5ce89e58de1630029fdea5261b0a7b4
+  CyxbsScheduleCourse: 0974777344eb1510de678882b62c9c82b15c58cc
   FluentDarkModeKit: b6317653a00329564582884772ec57c4eaad1a1f
   hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
   RyKit: 5ba0b81aad10ef74d0cd16eb8abf4f07e47ce7fb
